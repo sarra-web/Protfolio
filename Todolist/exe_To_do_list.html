@@ -1,0 +1,45 @@
+<!doctype html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="./jQueryAssets/jquery-1.11.1.min.js"></script>
+	<script src="./jquery-2.1.4.min.js"></script>
+	<script src="./ToDoList.js"></script>
+
+<link href="ToDoList.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+	
+    <div class="container">
+    	<h2>To Do List</h2>
+    
+<form id="formulaire">
+			
+	<label for="titre_tache">Titre de tache:</label>
+			<input type="text" id="titre_tache">
+			<label for="date_tache">Date </label>
+		        <input type="date" id="date_tache"value="DateActuel()">
+			<label for="texte">Description</label>
+		        <textarea id="descript"></textarea>
+	<label for="etat_tache">Importance</label>
+	
+	<input type="range" id="etat_tache" min="10" max="100" >
+
+ 
+	<input type="button" id="submitBtn" value="Ajouter"/>
+	<input type="button" id="initBtn" value="SupprimerTT"/>
+	  </form>
+    
+			<br/>
+	      
+      <table border=2 id="tacheListe">
+	 
+	</table> 
+    
+    </div>
+</body>
+	
+ 
+</html>
+

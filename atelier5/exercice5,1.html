@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+<title>Hello World avec jQuery</title>
+<meta charset=iso-8859-1 />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script  src="./jquery.js"></script>
+<script src="./script2.js"></script>
+<script>
+    function calculer(){
+        if(localStorage.comptloc==null ){localStorage.comptloc=0
+  }
+  else{
+      localStorage.comptloc++;
+     
+  }
+  if(sessionStorage.comptses==null){
+  sessionStorage.comptses=0}
+  else{
+      
+      var compt=Number(sessionStorage.comptses);
+      compt++;
+      sessionStorage.comptses=compt;
+  }
+     }
+
+</script>
+</head>
+ <body>
+    <h1>Contact</h1>
+    <p>Be called back for more information</p>
+<form id="form" onsubmit="calculer()"  action="page accueil.html" method="post">
+    <label>First name(*)</label>
+    <input type="text" placeholder="Name" required
+oninput="sessionStorage.setItem('username', this.value);" name=" Name" required>
+  <br>
+   <label>Last name(*)</label>
+   <input type="text" required><br>
+   <label>You want to be contacted by</label>
+   <select name="choix" id="choix" required>
+    <option value="">phone</option>
+    <option value="">Email</option>
+    </select><br>
+    <label>phone number</label>
+    <input type="tel" pattern={0-9} required autofocus><br>
+<label>When(*)</label>
+<input type="date" required><br>
+<label>Between(*)</label>
+<input type="time" value="07:45" min="07:00" max="19:00" required> and  
+<input type="time"  required><br>
+<input type="reset" value="cancel" required>
+<input type="submit" value="submit"required>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="DragDrop.js"></script>
+    <style>
+        #div1 {
+          width: 350px;
+          height: 70px;
+          padding: 10px;
+          border: 1px solid #aaaaaa;
+        }
+        </style>
+<meta charset="utf-8">
+<title>Exercice Drag & Drop</title>
+</head>
+
+<body>
+    <img id="drag1" src="./Images/madelaine.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+
+<br><br><br><br><br><br><br>
+
+  <div style="float: right;">
+    <p>Drag the W3Schools image into the rectangle:</p>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img src="./Images/tassecafe.jpg" width="275" height="183" alt=""/></div>      
+
+<audio id="aud" controls="controls" style="visibility: hidden;">
+    <source src="./Images/applaudir.wav" />
+   
+    <a href="file.mp3">Telecharger le morceau.</a>
+    </audio>
+    
+    
+
+
+        
+      
+
+
+
+
+</body>
+</html>

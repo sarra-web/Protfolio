@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Les 30 exercices</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="script30ex.js"></script>
+    <style>
+      #monimage {
+          background: url('im1.png') no-repeat top left;
+      }
+  </style>
+</head>
+  <body>
+      <!--Exercie1-->
+      <button type="button">exercice1</button>
+      <p style="display: none;">Ceci est un paragraphe</p>
+     <!--Exercie2-->
+     <br><br>
+     <input type='button' onclick="exercice2()" value="exercice 2">
+    <div class="hidden" style='visibility:hidden' id="2">
+        <span class='ma_classe'>-- Mon premier span ma_classe --</span>
+        <span class='ma_classe'>-- Mon deuxième span ma_classe --</span>
+        <div id="mon_div" style="border:1px solid gray"> Ce DIV est initialement dans le DOM en fin de fichier </div>
+    </div><br>
+    <!--Exercie3-->
+    <input type='button' onclick="exercice3()" value="exercice 3">
+    <div id="3" style='visibility:hidden'>
+        <form>
+            <textarea id="mon_textarea"> Mon texte ici </textarea>
+            <input type="button" value="Afficher le texte" id="afficher_texte" />
+        </form>
+    </div>
+      <!--Exercie4-->
+      <br><br>
+      <input type='button' onclick="exercice4()" value="exercice 4"></br></br>
+      <div id="4" style='visibility:hidden'>
+          <form> <input type="texte" id="no_paste" /></form>
+      </div>
+ <!--Exercie5-->
+ <input type='button' onclick="supprimer_dernier_caractere(elm)" value="exercice 5"></br></br>
+ <div id="5" style='visibility:hidden'>
+ <form>
+        <imput type='text' name='cache-texte' class='only_alpha_num' id="no_paste"/>
+      </form>
+ </div>
+<!--Exercie6-->
+ <input type='button' onclick="exercice6()" value="exercice 6"></br></br>
+ <div id="6" style='visibility:hidden'>
+  <img id="mon_image" src="im2.png" alt="survolez cette image "/>
+ </div>
+<!--Exercie7-->
+<input type='button' onclick="exercice7()" value="exercice 7"></br></br>
+<div id="7" style='visibility:hidden'>
+
+ <input id="moncalendrier" type="datepicker"  name="moncalendrier" value="04/12/2012"/>
+</div>
+<!--Exercie8-->
+<input type='button' onclick="exercice8()" value="exercice 8"></br></br>
+<div id="8" style='visibility:hidden'>
+  <img id="mon_image" src="im1.png" alt="image " />
+</div>
+  <!--Exercie9-->
+<input type='button' onclick="exercice9()" value="exercice 9"></br></br>
+<div id="9" style='visibility:hidden'> 
+  <a href="#">
+    <img src="im1.png" alt ="effet sur survol de l'image'"/></a>
+</div>
+<!--Exercie10-->
+<input type='button' onclick="exercice10()" value="exercice 10"></br></br>
+
+<!--Exercie11-->
+<input type='button' onclick="exercice11()" value="exercice 11"></br></br>
+
+<!--Exercie12-->
+<input type='button' onclick="exercice12()" value="exercice 12"></br></br>
+<div id="12" style='visibility:hidden'>
+  <div  class="maclassegenerale "> mon 1</div>
+  <div class="maclassegenerale maclasseaexclure"> mon </div>
+  <div class="maclassegenerale"> mon 3</div>
+  <div class="maclassegenerale maclasseaexclure"> mon </div>
+</div>
+<!--Exercie13-->
+<input type='button' onclick="exercice13()" value="exercice 13"></br></br>
+
+<!--Exercie14-->
+<input type='button' onclick="exercice14()" value="exercice 14"></br></br>
+<div class="monDiv1" style="height:500px">
+</div>
+<div class="monDiv2" style="margin-Top:200px">
+</div>
+<!--Exercie15-->
+<input type='button' onclick="exercice15()" value="exercice 15"></br></br>
+<div id="15" style='visibility:hidden'> 
+<textarea class="elementtextarea"></textarea></div>
+
+<!--Exercie17-->
+<input type='button' onclick="exercice17()" value="exercice 17"></br></br>
+<div id="17" style='visibility:hidden'> 
+<div id="redirection">
+  Cliquez moi pour déplacer la page vers l'élément d'identifiant #monancre
+</div>
+<div id="monancre"> Mon ancre</div>
+</div>
+<!--Exercie18-->
+<input type='button' onclick="exercice18()" value="exercice 18"></br></br>
+<div id="18" style='visibility:hidden'> 
+  <div id="monDiv"></div></div>
+
+  <!--Exercie19-->
+<input type='button' onclick="exercice19()" value="exercice 19"></br></br>
+
+<!--Exercie20-->
+<input type='button' onclick="exercice20()" value="exercice 20"></br></br>
+<div id="20" style='visibility:hidden'> 
+  <input type="text" id="titre"></div>
+
+  <!--Exercie23-->
+<input type='button' onclick="exercice23()" value="exercice 23"></br></br>
+<div id="23" style='visibility:hidden'>
+  <div id="div_pere">
+    <div class="div_fils"></div>
+    <div class="div_fils"></div>
+    <div class="div_fils"></div>
+  </div>
+</div>
+<!--Exercie24-->
+<input type='button' onclick="exercice24()" value="exercice 24"></br></br>
+<div id="24" style='visibility:hidden'>
+  <div id="parent">
+    <div> A </div>
+    <div> B </div>
+    <div id="mondiv"> C </div>
+    <div> D </div>
+  </div>
+</div>
+<!--Exercie25-->
+<input type='button' onclick="exercice25()" value="exercice 25"></br></br>
+<!--Exercie26-->
+
+<input type='button' onclick="exercice26()" value="exercice 26"></br></br>
+<div id="26" class="maclasse" style='visibility:hidden'>
+  <p>sarra</p>
+  <span>jjjjjjj</span>
+  
+</div>
+<!--Exercie27-->
+<input type='button' onclick="exercice27()" value="exercice 27"></br></br>
+<div id="27" style='visibility:hidden'>
+  <input type="checkbox" value="sarra" >
+  <input type="radio" value="sara">
+  <SELECT id="element ">
+    <OPTION VALUE="Paris">Paris</OPTION>
+    <OPTION VALUE="Grenoble">Grenoble</OPTION>
+    <OPTION VALUE="Marseille">Marseille</OPTION>
+  </SELECT></div>
+<!--Exercie28-->
+<input type='button' onclick="exercice28()" value="exercice 28"></br></br>
+<div id="28" style='visibility:hidden'>
+<div id="a">sarra</div>
+<div id="b">sara</div>
+</div>
+<!--Exercie29-->
+<input type='button' onclick="exercice29()" value="exercice 29"></br></br>
+<!--Exercie30-->
+<input type='button' onclick="exercice30()" value="exercice 30"></br></br>
+<div id="30" style='visibility:hidden'>
+  <img id="image-neon" src="im1.png"/>
+</div>
+</body> 
+</html>

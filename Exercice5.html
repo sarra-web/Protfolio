@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+var q;
+var test = 1;
+var c;
+first=prompt("Saisissez le prénom: ");
+var array = [first];
+while(test == 1){
+if (confirm("Voulez vous ajouter un autre prénom ?"))
+{
+var a=prompt("Saisissez le prénom: ");
+array.push(a);
+array.push(" ");
+}
+else
+{ test = 0;}}
+if (array.lengh==0)
+{alert("Aucun prénom à afficher")}
+else {alert(array);}
+</script>
+</body>
+</html>

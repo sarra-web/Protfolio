@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="style.css">
+<script>
+function verif(frm){
+var array = [];
+var k = 0;
+var fault = 0;
+var cin = frm.cin.value;
+var mail = [];
+array = cin.split();
+mail_test = frm.mail.value.split();
+if(frm.nom.value =="") {alert("Mettez votre nom");
+fault=fault+1;};
+if (array.length != 8) {fault=fault+1; alert("CIN doit
+contenir 8 chiffres");}
+for (var i=0, c=mail.length; i<c; i++)
+{
+if(mail[i]=='@'){k=k+1;};
+}
+if(k!=1){fault=fault+1; alert("Une adresse email doit
+contenir @");}
+if(fault == 0 ){alert("Inscription achevée");}
+}
+</script>
+</head>
+<body>
+<h1>Inscription</h1>
+<div class="bdy">
+<form>
+<label for="nom">Nom et prénom *:</label>
+<input type="text" name="nom" id="nom" required="true" />
+</br>
+</br>
+<label for="cin">CIN *:</label>
+<input type="text" name="cin" id="cin" required="true" />
+</br>
+</br>
+<label for="mail"> Adresse e-mail *:</label>
+<input type="text" name="mail" id="mail" required="true"
+/>
+</br>
+<p>Niveau:
+<label for="niveau">Secondaire </label>
+<input type="radio" name="niveau" id="niveau"
+float=left checked>
+<label for="niveau">Universitaire </label>
+<input type="radio" name="niveau" id="niveau"
+float=left>
+<label for="niveau">Autre </label>
+<input type="radio" name="niveau" id="niveau"
+float=left>
+</p>
+<label for="module">Module de formation:</label>
+</br>
+<div class="list">
+<select multiple name="module" id="module">
+<option value="module">Bureautique</option>
+<option value="module">SE et Réseaux info. </option>
+<option value="module">TIC</option>
+</br>
+</div>
+</br>
+</br>
+</br>
+<p class="ps">(*) champs obligatoires</p>
+</br>
+<input type="submit" onclick="verif(this.form)"
+value="Envoyer">
+<input type="reset" value="Annuler">
+</form>
+</div>
+</body>
+</html>

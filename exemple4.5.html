@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Gestion événementielle</title>
+<script src=http://code.jquery.com/jquery.min.js></script>
+</head>
+<form name="MonFormulaire" method="post" >
+<label>Quel est le meilleur système d’exploitation selon vous ?</label>
+<input name="texte" id="texte" placeholder="Entrez votre réponse ici">
+<input type="submit" id="validation" value="Envoyer">
+</form>
+<p>Activité : <span id="activite"></span></p>
+<script>
+$(function()
+{$('#texte').focus(function(){ $('#activite').text('La zone de texte a le focus'); });
+$('#texte').blur(function(){ $('#activite').text('La zone de texte a perdu le focus'); });
+$('#MonFormulaire').submit(function(){ $('#activite').text('Le bouton Submit a été pressé');
+});
+});
+</script>
+</body>
+</html>
